@@ -1,0 +1,15 @@
+python: "3.11"
+
+build_dependencies:
+  pip: latest
+
+dependencies:
+  - pip:
+      - pandas
+      - numpy
+      - scikit-learn
+      - xgboost
+      - mlflow
+      - joblib
+      - matplotlib
+      - seaborn
