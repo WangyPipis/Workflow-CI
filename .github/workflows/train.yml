@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 name: ML Training Workflow
+=======
+name: MLflow CI
+>>>>>>> 6984da5705bf0cf4e89d7eb4c5704fe4d2f3ff34
 
 on:
   push:
     branches:
       - main
 
+<<<<<<< HEAD
   workflow_dispatch:
 
 jobs:
@@ -13,11 +18,20 @@ jobs:
 
     steps:
       - name: Checkout Repository
+=======
+jobs:
+  train:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+>>>>>>> 6984da5705bf0cf4e89d7eb4c5704fe4d2f3ff34
         uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
+<<<<<<< HEAD
           python-version: '3.11'
 
       - name: Install Dependencies
@@ -28,3 +42,13 @@ jobs:
         run: |
           cd Membangun_model
           python modelling_tuning.py
+=======
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install mlflow pandas scikit-learn
+
+      - name: Run modelling
+        run: python modelling.py
+>>>>>>> 6984da5705bf0cf4e89d7eb4c5704fe4d2f3ff34
