@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install mlflow pandas scikit-learn
 
       - name: Run MLflow Project
-        run: python -m mlflow run .
+        run: python -m mlflow run . --env-manager=local
