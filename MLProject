@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Titanic_Project
 
 python_env: python_env.yaml
@@ -6,12 +5,3 @@ python_env: python_env.yaml
 entry_points:
   main:
     command: "python modelling.py"
-=======
-name: Titanic_Project
-
-python_env: python_env.yaml
-
-entry_points:
-  main:
-    command: "python modelling_tuning.py"
->>>>>>> 6984da5705bf0cf4e89d7eb4c5704fe4d2f3ff34
